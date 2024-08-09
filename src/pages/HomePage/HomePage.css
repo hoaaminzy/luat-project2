@@ -1,0 +1,17 @@
+.text-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines */
+    -webkit-box-orient: vertical;
+    max-height: calc(1.2em * 3); /* Approx height for 3 lines */
+    line-height: 1.2em;
+  }
+  .slick-slide {
+    margin: 0 13px !important; /* Điều chỉnh giá trị để thay đổi khoảng cách */
+  }
+  .slick-track {
+    display: flex !important;
+    gap: 20px !important; /* Điều chỉnh khoảng cách giữa các slide */
+  }

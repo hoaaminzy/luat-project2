@@ -1,0 +1,28 @@
+.send-button {
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s ease, padding 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .send-button .arrow {
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .send-button:hover .arrow {
+    opacity: 1;
+  }
+  
+  .send-button:hover {
+    padding-right: 60px; /* Adjust as needed to accommodate the arrow */
+  }
+  
+  .send-button:focus {
+    outline: none;
+  }
