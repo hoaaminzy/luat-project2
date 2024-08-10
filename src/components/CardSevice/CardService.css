@@ -1,8 +1,16 @@
 .hoverScale {
-    /* Initial state */
-    transition: transform 0.3s ease-in-out;
+  /* Initial state */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverScale:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 767px) {
+  .introContainer {
+    padding: 0 20px !important;
   }
-  
-  .hoverScale:hover {
-    transform: scale(1.1);
+  .slickcontainer {
+    width: 320px !important;
   }
+}

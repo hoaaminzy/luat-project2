@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  .frocess-container {
+  }
+  .profess-text {
+    font-size: 27px !important;
+  }
+  .icon-apl{
+    right: -150px !important;
+  }
+}

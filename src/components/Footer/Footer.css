@@ -1,0 +1,18 @@
+@media (max-width: 767px) {
+    .footermobile {
+      padding: 50px 20px !important;
+    }
+    .footer-text {
+      font-size: 36px !important;
+    }
+    .add {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .text-add{
+      font-size: 25px !important;
+      width: 90%;
+    }
+  }

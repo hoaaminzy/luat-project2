@@ -2,62 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  @keyframes slideInFromRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  @keyframes slideInFromTop {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  @keyframes slideInFromBottom {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .animate-slide-left {
-    animation: slideInFromLeft 1.3s ease-out forwards;
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
-  
-  .animate-slide-right {
-    animation: slideInFromRight 1.3s ease-out forwards;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .animate-slide-top {
-    animation: slideInFromTop 1.3s ease-out forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
-  
-  .animate-slide-bottom {
-    animation: slideInFromBottom 1.3s ease-out forwards;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
+}
+
+.animate-slide-left {
+  animation: slideInFromLeft 1.3s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideInFromRight 1.3s ease-out forwards;
+}
+
+.animate-slide-top {
+  animation: slideInFromTop 1.3s ease-out forwards;
+}
+
+.animate-slide-bottom {
+  animation: slideInFromBottom 1.3s ease-out forwards;
+}
+.pad100 {
+  padding: 0 100px;
+}

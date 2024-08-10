@@ -12,10 +12,10 @@ import introduceperson2 from "../../assets/imgs/introduceperson2.png";
 import introduceperson3 from "../../assets/imgs/introduceperson3.png";
 import introduceperson4 from "../../assets/imgs/introduceperson4.png";
 import PageMeta from "../../components/PageMeta/PageMeta";
-
+import "./Introduce.css";
 const Introduce = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleOpenModal = () => setIsModalOpen(true);
+  // const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => setIsModalOpen(false);
   const { ref: refA1, inView: inViewA1 } = useInView({ triggerOnce: true });
   const { ref: refA2, inView: inViewA2 } = useInView({ triggerOnce: true });
@@ -39,18 +39,18 @@ const Introduce = () => {
         className="w-full d-flex bg-white flex-col"
         style={{ paddingTop: "100px" }}
       >
-        <div className="px-[100px] py-16 flex-col justify-center items-center gap-2.5 flex">
-          <div className=" flex-col justify-center items-center gap-12 flex">
-            <div className=" flex-col justify-center items-center gap-2 flex">
+        <div className="introContainer w-full px-[100px] py-16 flex-col justify-center items-center gap-2.5 flex">
+          <div className="w-full flex-col justify-center items-center fix-gap flex">
+            <div className="w-full flex-col justify-center items-center  flex introo">
               <ProfessionalBanner title="Apollo Lawyers" />
               <div
-                className="h-36 pb-12 flex-col justify-center items-center gap-6 flex"
-                style={{ paddingTop: "150px" }}
+                className="w-full pb-5 flex-col justify-center items-center gap-6 flex introooo"
+                style={{ paddingTop: "50px" }}
               >
-                <div className="text-center text-[#002740] text-[56px] font-bold font-space-grotesk leading-[64px]">
+                <div className="text-intro text-center text-[#002740] text-[56px] font-bold font-space-grotesk leading-[64px]">
                   Đồng Hành Pháp Lý, Bảo Vệ Quyền Lợi
                 </div>
-                <div className="pb-16 w-[654px] text-center text-[#606670] text-base font-normal font-open-sans leading-7">
+                <div className="desc-intro pb-16 w-[654px] text-center text-[#606670] text-base font-normal font-open-sans leading-7">
                   . Với tầm nhìn dài hạn và chiến lược phát triển bền vững,
                   chúng tôi không ngừng nỗ lực để trở thành đối tác pháp lý đáng
                   tin cậy, đồng hành cùng bạn trong mọi vấn đề pháp lý.
@@ -65,7 +65,7 @@ const Introduce = () => {
             />
           </div>
         </div>
-        <div className="w-full px-[100px] py-20 justify-center items-center gap-10 inline-flex">
+        <div className="dvnoibat w-full px-[100px] py-20 justify-center items-center gap-10 inline-flex">
           <Row className="">
             <Col
               sm={6}
@@ -73,10 +73,10 @@ const Introduce = () => {
               className={`${inViewA1 ? "animate-slide-bottom" : ""}`}
             >
               <div className=" flex-col gap-4 flex">
-                <div className=" text-[#9ea8b6] text-2xl font-bold font-space-grotesk leading-loose">
+                <div className="text-nbb text-[#9ea8b6] text-2xl font-bold font-space-grotesk leading-loose">
                   Những dịch vụ nổi bật
                 </div>
-                <div className=" text-[#002740] text-5xl font-bold font-space-grotesk leading-[56px]">
+                <div className="des-nb text-[#002740] text-5xl font-bold font-space-grotesk leading-[56px]">
                   Chất Lượng Pháp Lý <br />
                   Tinh Tế, Được Xây Dựng Từ Tâm Huyết Nghề Nghiệp
                 </div>
@@ -134,21 +134,21 @@ const Introduce = () => {
               ref={refA2}
               className={`${
                 inViewA2 ? "animate-slide-right" : ""
-              } d-flex justify-end`}
+              } d-flex justify-end img-nb-mobile`}
             >
               <img
-                className="grow shrink basis-0 self-stretch rounded-2xl object-cover"
+                className="h-img-nb grow shrink basis-0 self-stretch rounded-2xl object-cover"
                 src={introduce3}
               />
             </Col>
           </Row>
         </div>
-        <div className="py-20 flex-col justify-center items-center gap-16 flex">
+        <div className="dn-us py-20 flex-col justify-center items-center gap-16 flex">
           <div
             ref={refA3}
             className={`${
               inViewA3 ? "animate-slide-top" : ""
-            } text-center text-[#002740] text-5xl font-bold font-space-grotesk leading-[56px]`}
+            } text-dn-mobile text-center text-[#002740] text-5xl font-bold font-space-grotesk leading-[56px]`}
           >
             Đội ngũ của chúng tôi
           </div>
@@ -156,8 +156,8 @@ const Introduce = () => {
             ref={refA4}
             className={`${
               inViewA4 ? "animate-slide-bottom" : ""
-            } d-flex w-full justify-center items-center`}
-            style={{ height: "400px" }}
+            } flex w-full justify-center items-center grid-mobile`}
+            style={{ height: "400px", marginTop: "100px" }}
           >
             <Col sm={3} className=" justify-center items-center col-item flex ">
               <img
@@ -192,19 +192,19 @@ const Introduce = () => {
           />
         </div>
 
-        <Row className="w-full px-[100px] py-20 flex ">
+        <Row className="gtkb w-full px-[100px] py-20 flex ">
           <Col
             sm={6}
             ref={refA5}
             className={`${inViewA5 ? "animate-slide-bottom" : ""}`}
           >
-            <div className="flex-col justify-start items-start flex gap-6 ">
-              <div className="text-[#002740] text-5xl font-bold font-space-grotesk leading-[56px]">
+            <div className="flex-col justify-start items-start flex gap-6 gtkb-contaner ">
+              <div className="text-gtkb text-[#002740] text-5xl font-bold font-space-grotesk leading-[56px]">
                 Giá trị tạo nên <br />
                 sự khác biệt
               </div>
               <div
-                className="self-stretch text-[#606670] text-base font-normal font-open-sans leading-7"
+                className="desc-gtkb self-stretch text-[#606670] text-base font-normal font-open-sans leading-7"
                 style={{ height: "calc(200px - 20px)" }}
               >
                 Tại Apolo Lawyers, chúng tôi không ngừng nỗ lực để tạo ra sự
@@ -216,20 +216,22 @@ const Introduce = () => {
           </Col>
           <Col
             ref={refA6}
-            className={`${inViewA6 ? "animate-slide-top" : ""} flex `}
+            className={`${
+              inViewA6 ? "animate-slide-top" : ""
+            } flex asd justify-end `}
             sm={6}
           >
-            <div className="flex ">
-              <div className="">
+            <div className="flex flex100 ">
+              <div className="sdasd">
                 <div
-                  className=""
+                  className="hoes"
                   style={{
                     display: "grid",
                     gap: "15px",
                     gridTemplateColumns: "repeat(2, 1fr)",
                   }}
                 >
-                  <div className=" px-4 pt-4 pb-16 rounded-2xl border border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
+                  <div className="c100 px-4 pt-4 pb-16 rounded-2xl  border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
                     <div className=" text-[#002740] text-[40px] font-medium font-['Space Grotesk'] leading-[48px]">
                       01
                     </div>
@@ -237,7 +239,7 @@ const Introduce = () => {
                       Chất Lượng Dịch Vụ
                     </div>
                   </div>
-                  <div className="  px-4 pt-4 pb-16 rounded-2xl border border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
+                  <div className=" c100 px-4 pt-4 pb-16 rounded-2xl  border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
                     <div className=" text-[#002740] text-[40px] font-medium font-['Space Grotesk'] leading-[48px]">
                       02
                     </div>
@@ -245,7 +247,7 @@ const Introduce = () => {
                       Tâm Huyết Nghề Nghiệp
                     </div>
                   </div>
-                  <div className="px-4 pt-4 pb-16 rounded-2xl border border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
+                  <div className="c100 px-4 pt-4 pb-16 rounded-2xl  border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
                     <div className="self-stretch text-[#002740] text-[40px] font-medium font-['Space Grotesk'] leading-[48px]">
                       03
                     </div>
@@ -253,7 +255,7 @@ const Introduce = () => {
                       Đổi Mới Liên Tục
                     </div>
                   </div>
-                  <div className="px-4 pt-4 pb-16 rounded-2xl border border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
+                  <div className="c100 px-4 pt-4 pb-16 rounded-2xl  border-[#48d1cc] flex-col justify-start items-start gap-6 inline-flex">
                     <div className="self-stretch text-[#002740] text-[40px] font-medium font-['Space Grotesk'] leading-[48px]">
                       04
                     </div>
@@ -266,16 +268,16 @@ const Introduce = () => {
             </div>
           </Col>
         </Row>
-        <div className=" relative w-full pr-[100px] justify-start items-center inline-flex">
+        <div className="ttcontainer relative w-full pr-[100px] justify-start items-center inline-flex">
           <div
             ref={refA10}
             className={`${
               inViewA10 ? "animate-slide-top" : ""
-            } pl-[100px] pr-[150px] py-[100px] bg-[#f4f4f4]/95 rounded-2xl flex-col justify-start items-start gap-6 inline-flex`}
+            } ttnd pl-[100px] pr-[150px] py-[100px] bg-[#f4f4f4]/95 rounded-2xl flex-col justify-start items-start gap-6 inline-flex`}
             style={{ width: "60%" }}
           >
-            <div className="self-stretch h-max flex-col justify-start items-start gap-4 flex">
-              <div className="self-stretch text-[#9ea8b6] text-2xl font-bold font-space-grotesk leading-loose">
+            <div className="ttdf self-stretch h-max flex-col justify-start items-start gap-4 flex">
+              <div className="text-adasd text-start  text-[#9ea8b6] text-2xl font-bold font-space-grotesk leading-loose">
                 Thành tựu
               </div>
               <div
@@ -297,16 +299,18 @@ const Introduce = () => {
           <div
             style={{ right: "100px" }}
             ref={refA11}
-            className={`${inViewA11 ? "animate-slide-right" : ""} absolute `}
+            className={`${
+              inViewA11 ? "animate-slide-right" : ""
+            } absolute move `}
           >
             <img
-              className=" object-cover w-full rounded-2xl"
+              className=" object-cover w-full rounded-2xl wmove"
               src={introduce1}
               style={{ width: "630px" }}
             />
           </div>
         </div>
-        <Row className="w-full px-[100px] py-20 ">
+        <Row className="w-full px-[100px] py-20 gk ">
           <Col
             sm={6}
             ref={refA7}
@@ -320,13 +324,13 @@ const Introduce = () => {
             className={`${inViewA8 ? "animate-slide-bottom" : ""}`}
           >
             <div className="flex flex-col justify-center items-center h-full">
-              <div className=" flex-col justify-start items-start gap-6 flex">
+              <div className="adasd flex-col justify-start items-start gap-6 flex">
                 <div className="  flex-col justify-start items-start gap-4 flex">
-                  <div className=" text-[#002740] text-4xl font-bold font-space-grotesk ">
+                  <div className="text-gk text-[#002740] text-4xl font-bold font-space-grotesk ">
                     Cam Kết Của Chúng Tôi
                   </div>
                 </div>
-                <div className=" text-black text-base font-normal font-['Inter'] leading-normal">
+                <div className="des-gk text-black text-base font-normal font-['Inter'] leading-normal">
                   Chúng tôi cam kết cung cấp các dịch vụ pháp lý chất lượng,
                   nhanh chóng và hiệu quả. Chúng tôi luôn sẵn sàng lắng nghe và
                   giải quyết mọi vấn đề pháp lý của bạn với tinh thần trách
@@ -334,7 +338,7 @@ const Introduce = () => {
                   tin cậy của bạn!
                 </div>
               </div>
-              <div className="flex justify-start mt-4 items-start w-full">
+              <div className="flex buttnsd justify-start mt-4 items-start w-full">
                 <ButtonCustom
                   title="Liên hệ ngay"
                   from="#40e0d0"
@@ -345,31 +349,31 @@ const Introduce = () => {
             </div>
           </Col>
         </Row>
-        <div
-          ref={refA9}
-          className={` ${
-            inViewA9 ? "animate-slide-bottom" : ""
-          } self-stretch h-max px-[100px] flex-col justify-start items-start gap-2.5 pb-24 flex`}
-        >
-          <div className="self-stretch h-max px-[200px] py-10 bg-gradient-to-r from-[#40e0d0] to-[#48d1cc] rounded-2xl shadow flex-col justify-start items-center gap-10 flex">
-            <div className="self-stretch h-48 flex-col justify-start items-center gap-6 flex">
-              <div className="self-stretch text-center text-white text-5xl font-bold font-['Space Grotesk'] leading-[56px]">
-                Bảo vệ Quyền lợi của Bạn <br />
-                Ngay Hôm Nay!
+        <div className="w-full zxc pt-16">
+          <div
+            ref={refA5}
+            className={` ${
+              inViewA5 ? "animate-slide-bottom" : ""
+            } w-full h-max baovecontainer px-[100px] flex-col justify-start items-start gap-2.5 pb-20 flex`}
+          >
+            <div className=" baove w-full h-max px-[200px] py-10 bg-gradient-to-r from-[#40e0d0] to-[#48d1cc] rounded-2xl shadow flex-col justify-start items-center gap-10 flex">
+              <div className="asd h-48 flex-col justify-start items-center gap-6 flex">
+                <div className="text-bvvvv text-center text-white text-5xl font-bold font-space-grotesk leading-[56px]">
+                  Bảo vệ Quyền lợi của Bạn Ngay Hôm Nay!
+                </div>
+                <div className="descbv w-[654px] text-center text-white text-base font-normal font-open-sans leading-7">
+                  Đừng để những vấn đề pháp lý cản trở bước tiến của bạn. Hãy để
+                  Apolo Lawyers đồng hành và bảo vệ quyền lợi của bạn một cách
+                  chuyên nghiệp và tận tâm.
+                </div>
               </div>
-              <div className="w-[654px] text-center text-white text-base font-normal font-['Open Sans'] leading-7">
-                Đừng để những vấn đề pháp lý cản trở bước tiến của bạn. Hãy để
-                Apolo Lawyers đồng hành và bảo vệ quyền lợi của bạn một cách
-                chuyên nghiệp và tận tâm.
-              </div>
+              <ButtonCustom
+                title="Liên hệ ngay"
+                from="#fff"
+                to="#fff"
+                color="text-black"
+              />
             </div>
-            <ButtonCustom
-              onClick={handleOpenModal}
-              title="Liên hệ ngay"
-              from="#fff"
-              to="#fff"
-              color="text-black"
-            />
           </div>
         </div>
         <div>

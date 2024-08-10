@@ -5,6 +5,8 @@ interface ButtonProps {
   from?: string;
   to?: string;
   color?: string;
+  text?: string;
+
   onClick?: () => void;
 }
 import "./ButtonCustom.css";
@@ -13,6 +15,7 @@ const ButtonCustom: React.FC<ButtonProps> = ({
   from,
   to,
   color,
+  text,
   onClick,
 }) => {
   const gradientStyle = {
@@ -27,12 +30,12 @@ const ButtonCustom: React.FC<ButtonProps> = ({
         onClick={onClick}
       >
         <div
-          className={`w-full ${color} flex text-center text-base justify-center items-center font-bold font-Space Grotesk leading-normal`}
+          className={`w-full ${color} ${text} flex text-center text-base justify-center items-center font-bold font-Space Grotesk leading-normal`}
         >
           {title}
         </div>
         <span
-          className={`arrow ${color} absolute right-5`}
+          className={`arrow ${color} ${text} absolute right-5`}
           style={{ fontSize: "25px" }}
         >
           →
