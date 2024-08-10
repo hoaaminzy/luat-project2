@@ -25,7 +25,7 @@ const Introduce = () => {
   const { ref: refA6, inView: inViewA6 } = useInView({ triggerOnce: true });
   const { ref: refA7, inView: inViewA7 } = useInView({ triggerOnce: true });
   const { ref: refA8, inView: inViewA8 } = useInView({ triggerOnce: true });
-  const { ref: refA9, inView: inViewA9 } = useInView({ triggerOnce: true });
+  // const { ref: refA9, inView: inViewA9 } = useInView({ triggerOnce: true });
   const { ref: refA10, inView: inViewA10 } = useInView({ triggerOnce: true });
   const { ref: refA11, inView: inViewA11 } = useInView({ triggerOnce: true });
 
